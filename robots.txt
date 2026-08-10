@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeubi403-jpg.github.io/deck-zero/sitemap.xml

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Deck Zero · The years</title>
+<meta name="theme-color" content="#020805">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://zeubi403-jpg.github.io/deck-zero/DECK_ZERO_Pitch.html#chrono">
+<meta property="og:title" content="Deck Zero · The years">
+<meta property="og:description" content="Chronology — wrong autopsy, near densify, Cairn-9 warm.">
+<meta property="og:url" content="https://zeubi403-jpg.github.io/deck-zero/DECK_ZERO_Chronology.html">
+<meta property="og:image" content="https://zeubi403-jpg.github.io/deck-zero/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://zeubi403-jpg.github.io/deck-zero/og.png">
+<style>
+:root{
+  --void:#020805;--ink:#a8c4b4;--title:#d4f0e0;--phos:#4dff9a;--phos-dim:#2a8f58;
+  --line:rgba(77,255,154,.18);--mono:"IBM Plex Mono",ui-monospace,monospace;
+  --frame:clamp(14px,2.4vw,22px);--radius-tube:clamp(14px,3.2vw,28px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;background:var(--void);color:var(--ink);font-family:Georgia,serif}
+body{
+  background:
+    radial-gradient(ellipse 55% 40% at 50% 0%, rgba(77,255,154,.09), transparent 55%),
+    linear-gradient(180deg,#030906,#07140f);
+  display:flex;align-items:center;justify-content:center;
+  padding:calc(var(--frame) + 1.5rem + env(safe-area-inset-top)) calc(var(--frame) + 1rem) calc(var(--frame) + 1.5rem + env(safe-area-inset-bottom));
+}
+.bezel{
+  position:fixed;inset:0;pointer-events:none;
+  border-radius:var(--radius-tube);
+  box-shadow:
+    inset 0 0 0 1px rgba(77,255,154,.2),
+    inset 0 0 0 var(--frame) #010403,
+    inset 0 0 0 calc(var(--frame) + 1px) rgba(77,255,154,.1);
+}
+.card{
+  position:relative;z-index:1;width:min(28rem,100%);
+  border:1px solid var(--line);background:rgba(2,8,5,.92);
+  padding:1.35rem 1.4rem;border-radius:10px;
+}
+.kicker{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--phos-dim);margin-bottom:.7rem;
+}
+h1{
+  font-family:var(--mono);font-weight:500;font-size:1.25rem;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--title);margin-bottom:.75rem;
+}
+p{line-height:1.55;margin-bottom:1.1rem;max-width:32rem}
+.links{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center}
+a{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--phos);text-decoration:none;border:1px solid var(--line);
+  padding:.55rem .75rem;min-height:44px;display:inline-flex;align-items:center;
+  background:rgba(4,14,10,.75);
+}
+a.primary{background:rgba(77,255,154,.12);border-color:rgba(77,255,154,.4)}
+a:hover{background:rgba(77,255,154,.18);text-decoration:none}
+.muted{color:#6f9180;font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;margin-top:1rem}
+</style>
+<script>
+(function () {
+  var lang = "en";
+  try { lang = localStorage.getItem("dz-lang") || lang; } catch (e) {}
+  var q = new URLSearchParams(location.search).get("lang");
+  if (q === "fr" || q === "en") lang = q;
+  var target = "DECK_ZERO_Pitch.html?lang=" + lang + "#chrono";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce) {
+    /* Intentional gate beat — diegetic file open, not a flash. */
+    setTimeout(function () { location.replace(target); }, 1400);
+  }
+  window.__dzCenturyTarget = target;
+})();
+</script>
+<script src="dz-terminal.js"></script>
+</head>
+<body>
+<div class="bezel" aria-hidden="true"></div>
+<main class="card">
+  <div class="kicker">Ashen-Null</div>
+  <h1 data-lang-switch>Chronology</h1>
+  <p data-lang-switch-p>Wrong autopsy · densify · Cairn-9 — opening.</p>
+  <div class="links">
+    <a class="primary" id="go" href="DECK_ZERO_Pitch.html#chrono">Open</a>
+    <a id="wiki" href="wiki/timeline.html">Wiki</a>
+    <a id="home" href="index.html">Terminal</a>
+  </div>
+  <div class="muted" id="chronoMuted">Faraday seal · fiber only · no RF</div>
+</main>
+<script>
+(function () {
+  var lang = "en";
+  try { lang = localStorage.getItem("dz-lang") || lang; } catch (e) {}
+  var q = new URLSearchParams(location.search).get("lang");
+  if (q === "fr" || q === "en") lang = q;
+  document.documentElement.lang = lang;
+  var target = window.__dzCenturyTarget || ("DECK_ZERO_Pitch.html?lang=" + lang + "#chrono");
+  var go = document.getElementById("go");
+  var home = document.getElementById("home");
+  var wiki = document.getElementById("wiki");
+  if (go) {
+    go.href = target;
+    go.textContent = lang === "fr" ? "Ouvrir" : "Open";
+  }
+  if (wiki) {
+    wiki.href = "wiki/timeline.html?lang=" + lang;
+    wiki.textContent = lang === "fr" ? "Wiki complet" : "Full wiki";
+  }
+  if (home) {
+    home.href = "index.html?lang=" + lang;
+  }
+  var h = document.querySelector("[data-lang-switch]");
+  var p = document.querySelector("[data-lang-switch-p]");
+  if (h) h.textContent = lang === "fr" ? "Chronologie" : "Chronology";
+  if (p) {
+    p.textContent = lang === "fr"
+      ? "Mauvaise autopsie · densifier · Cairn-9 — le dossier s’ouvre."
+      : "Wrong autopsy · densify · Cairn-9 — the file opens.";
+  }
+  var mutedEl = document.getElementById("chronoMuted");
+  if (mutedEl) {
+    mutedEl.textContent = lang === "fr"
+      ? "Sceau Faraday · fibre uniquement · pas de RF"
+      : "Faraday seal · fiber only · no RF";
+  }
+  document.title = lang === "fr" ? "Deck Zero · Les années" : "Deck Zero · The years";
+})();
+</script>
+</body>
+</html>

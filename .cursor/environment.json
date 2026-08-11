@@ -1,0 +1,16 @@
+{
+  "name": "Deck Zero",
+  "terminals": [
+    {
+      "name": "web",
+      "command": "python3 -m http.server 8000",
+      "description": "Serves the static Deck Zero site at http://localhost:8000 (mirrors GitHub Pages). Open / for the main experience and /wiki/ for the encyclopedia."
+    }
+  ],
+  "ports": [
+    {
+      "name": "web server",
+      "port": 8000
+    }
+  ]
+}
